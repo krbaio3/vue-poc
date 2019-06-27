@@ -1,0 +1,27 @@
+{
+  "name": "@my-vue/dom",
+  "version": "0.1.0",
+  "description": "dom workspace",
+  "main": "app.js",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/krbaio3/vue-poc.git"
+  },
+  "keywords": [
+    "vue",
+    "dom"
+  ],
+  "author": "krbaio3",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krbaio3/vue-poc/issues"
+  },
+  "homepage": "https://github.com/krbaio3/vue-poc#readme",
+  "private": true
+}

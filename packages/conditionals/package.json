@@ -1,0 +1,21 @@
+{
+  "name": "@my-vue/conditionals",
+  "version": "0.0.0",
+  "description": "vue conditionals",
+  "main": "app.js",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "repository": "git+ssh://git@github.com/krbaio3/vue-poc.git",
+  "keywords": [
+    "vue",
+    "conditionals"
+  ],
+  "author": "KrBaIO3",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krbaio3/vue-poc/issues"
+  },
+  "homepage": "https://github.com/krbaio3/vue-poc#readme",
+  "private": true
+}

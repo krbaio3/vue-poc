@@ -1,17 +1,43 @@
 {
-  "name": "poc",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "name": "@my-vue",
+  "version": "0.1.0",
+  "description": "vue-poc",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "lerna run compile",
+    "clean": "lerna run clean",
+    "lint": "lerna run lint",
+    "test": "lerna run test",
+    "build": "lerna run build",
+    "serve": "lerna run serve",
+    "bootstrap": "lerna bootstrap --use-workspaces"
   },
-  "repository": "git+https://github.com/krbaio3/vue-poc.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krbaio3/vue-poc.git"
+  },
+  "keywords": [
+    "vue",
+    "poc",
+    "yarn",
+    "monorepo"
+  ],
+  "workspaces": [
+    "packages/*"
+  ],
   "author": "krbaio3",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/krbaio3/vue-poc/issues"
   },
   "homepage": "https://github.com/krbaio3/vue-poc#readme",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.14.1",
+    "husky": "^2.4.0"
+  },
+  "dependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.2.2"
+  }
 }
