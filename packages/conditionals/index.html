@@ -4,38 +4,28 @@
     <meta charset="UTF-8" />
     <title>Vue - Conditionals</title>
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body></body>
   <div id="conditionals">
-    <div 
-      class="demo" 
-      @click="attachRed=!attachRed"
-      :class="{red: attachRed}">
-    </div>
-    <div 
-      class="demo" 
-      @click="attachRed=!attachRed"
-      :class="divClass">
-    </div>
+    <p v-if="show">You can see me!</p>
+    <p v-else>Now see me!</p>
+    <template>
+      <pre>Inside template and var is {{ show }}</pre>
+    </template>
+    <p v-show="show">Do you also see me?</p>
+    <button @click="show = !show">Hide Text</button>
 
-    <div 
-      class="demo" 
-      @click="attachBlue=!attachBlue"
-      :class="{blue: attachBlue}">
-    </div>
-    <div 
-      class="demo" 
-      @click="attachGreen=!attachGreen"
-      :class="{green: attachGreen}">
-    </div>
-
-    <div 
-      class="demo" 
-      :class="color">
-    </div>
-
-    <input v-model="color" type="text" />
+    <ul>
+      <li v-for="(ingredient, i) in ingredients" :key="ingredient">
+        {{ ingredient }} ( {{ i }})
+      </li>
+      <li v-for="person in persons" :key="person.id">
+        <div v-for="(value, key, index) in person" :key="value.id">
+          {{ key }} - {{ value }} - {{ index }}
+        </div>
+      </li>
+    </ul>
   </div>
   <script src="app.js"></script>
 </html>

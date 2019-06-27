@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Monster Slayer</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="icon" href="#">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/foundation.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <div id="slayer">
+      <section class="row">
+        <div class="small-6 columns">
+          <h1 class="text-center">YOU</h1>
+          <div class="healthbar">
+            <div
+              class="healthbar text-center"
+              style="background-color: green; margin: 0; color: white;"
+              :style="{width: myHealth + '%'}"
+            >{{myHealth}}</div>
+          </div>
+        </div>
+        <div class="small-6 columns">
+          <h1 class="text-center">MONSTER</h1>
+          <div class="healthbar">
+            <div
+              class="healthbar text-center"
+              style="background-color: green; margin: 0; color: white;"
+              :style="{width: monsterHealth + '%'}"
+            >{{monsterHealth}}</div>
+          </div>
+        </div>
+      </section>
+      <section class="row controls" v-if="newGame">
+        <div class="small-12 columns">
+          <button id="start-game" @click="newGame=!newGame">START NEW GAME</button>
+        </div>
+      </section>
+      <section class="row controls" v-else>
+        <div class="small-12 columns">
+          <button id="attack" @click="attackHandler">ATTACK</button>
+          <button id="special-attack" @click="specialAttakHandler">SPECIAL ATTACK</button>
+          <button id="heal" @click="healthyHandler">HEAL</button>
+          <button id="give-up" @click="resetHandler">GIVE UP</button>
+        </div>
+      </section>
+      <section class="row log" v-if="logAttacks.length >0">
+        <div class="small-12 columns">
+          <ul>
+            <li 
+              v-for="(logAttack, key) in logAttacks" 
+              :key="key"
+              :class="{'player-turn' : logAttack.isPlayer, 'monster-turn': !logAttack.isPlayer}"
+              >
+              {{logAttack.name}}
+              <!-- <template v-for="(item) in logAttack" >
+                {{ item }}
+              </template> -->
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

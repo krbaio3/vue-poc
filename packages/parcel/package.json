@@ -1,0 +1,24 @@
+{
+  "name": "@my-vue/parcel",
+  "version": "1.0.0",
+  "description": "Vue with parcel",
+  "main": "index.js",
+  "scripts": {
+    "test": "lern test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krbaio3/vue-poc.git"
+  },
+  "keywords": [
+    "Vue",
+    "Parcel"
+  ],
+  "author": "KrBaIO3",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krbaio3/vue-poc/issues"
+  },
+  "homepage": "https://github.com/krbaio3/vue-poc#readme",
+  "private": true
+}

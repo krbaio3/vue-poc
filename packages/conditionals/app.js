@@ -1,17 +1,11 @@
 new Vue({
-  el: "#conditionals",
+  el: '#conditionals',
   data: {
-    attachRed: false,
-    attachGreen: false,
-    attachBlue: false,
-    color: "chocolate"
-  },
-  computed: {
-    divClass() {
-      return {
-        red: this.attachRed,
-        blue: !this.attachRed
-      };
-    }
+    show: true,
+    ingredients: ['meat', 'fruit', 'cookies'],
+    persons: [
+      { name: 'Jorge', age: 30, color: 'green', id: 0 },
+      { name: 'Angela', age: 30, color: 'pink', id: 1 }
+    ]
   }
 });
