@@ -1,0 +1,24 @@
+{
+  "name": "rendering",
+  "version": "0.1.0",
+  "description": "vue rendering",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/krbaio3/vue-poc.git"
+  },
+  "author": "krbaio3",
+  "license": "MIT",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/krbaio3/vue-poc/issues"
+  },
+  "homepage": "https://github.com/krbaio3/vue-poc#readme",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "vue",
+    "rendering"
+  ]
+}
