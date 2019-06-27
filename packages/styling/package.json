@@ -1,22 +1,15 @@
 {
-  "name": "@my-vue/dom",
+  "name": "@my-vue/styling",
   "version": "0.1.0",
-  "description": "dom workspace",
+  "description": "styling",
   "main": "app.js",
   "scripts": {
-    "test": "yarn test"
-  },
-  "publishConfig": {
-    "access": "restricted"
+    "test": "lern test"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/krbaio3/vue-poc.git"
   },
-  "keywords": [
-    "vue",
-    "dom"
-  ],
   "author": "krbaio3",
   "license": "MIT",
   "bugs": {

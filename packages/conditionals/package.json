@@ -1,23 +1,17 @@
 {
-  "name": "@my-vue/dom",
-  "version": "0.1.0",
-  "description": "dom workspace",
+  "name": "@my-vue/conditionals",
+  "version": "0.0.0",
+  "description": "vue conditionals",
   "main": "app.js",
   "scripts": {
     "test": "yarn test"
   },
-  "publishConfig": {
-    "access": "restricted"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/krbaio3/vue-poc.git"
-  },
+  "repository": "git+ssh://git@github.com/krbaio3/vue-poc.git",
   "keywords": [
     "vue",
-    "dom"
+    "conditionals"
   ],
-  "author": "krbaio3",
+  "author": "KrBaIO3",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/krbaio3/vue-poc/issues"

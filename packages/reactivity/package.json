@@ -1,0 +1,16 @@
+{
+  "name": "@my-vue/reactivity",
+  "version": "0.1.0",
+  "description": "reactivity example",
+  "main": "app.js",
+  "author": "KrBaIO3",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krbaio3/vue-poc/tree"
+  },
+  "private": true,
+  "scripts": {
+    "test": "jest test"
+  }
+}
